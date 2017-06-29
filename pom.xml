@@ -23,20 +23,29 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <renjin.version>0.8.2408</renjin.version>
     </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>jfxplot</id>
+            <name>Renjin Jfxplot Repository</name>
+            <url>https://nexus.bedatadriven.com/content/repositories/jfxplot/</url>
+        </repository>
+    </distributionManagement>
 
     <dependencies>
         <!-- the script engine is convenient even if you do not use it explicitly -->
         <dependency>
             <groupId>org.renjin</groupId>
             <artifactId>renjin-script-engine</artifactId>
-            <version>0.7.0-RC7</version>
+            <version>${renjin.version}</version>
         </dependency>
         <!-- the hamcrest package is only required if you use it for unit tests -->
         <dependency>
             <groupId>org.renjin</groupId>
             <artifactId>hamcrest</artifactId>
-            <version>0.7.0-RC7</version>
+            <version>${renjin.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -70,7 +79,7 @@
             <plugin>
                 <groupId>org.renjin</groupId>
                 <artifactId>renjin-maven-plugin</artifactId>
-                <version>0.7.0-RC7</version>
+                <version>${renjin.version}</version>
                 <executions>
                     <execution>
                         <id>build</id>
