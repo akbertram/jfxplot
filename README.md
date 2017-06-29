@@ -13,8 +13,6 @@ Add the jar file, plot-0.1-SNAPSHOT.jar, to the renjin dependencies directory.
 
 Load in library and create some test data
 
-    import(org.jfxplot.PlotApp)
-    import(org.jfxplot.GraphicsState)
     library(org.jfxplot.plot)
 
     x = seq(-2.0*pi,2.0*pi,4.0*pi/100)

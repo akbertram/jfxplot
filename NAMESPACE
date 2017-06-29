@@ -22,3 +22,8 @@ export(C_plotXY)
 export(.External.graphics)
 export(par)
 export(canvas)
+importClass(org.jfxplot.PlotApp)
+importClass(org.jfxplot.GraphicsState)
+importClass(org.jfxplot.StageManager)
+
+
